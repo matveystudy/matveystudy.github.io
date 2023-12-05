@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Торговая компания "Легион"</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for better text visibility */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            clear: both;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        /* Styles for the slider container */
+        .swiper-container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Styles for the pagination (optional) */
+        .swiper-pagination {
+            position: absolute;
+            bottom: 10px;
+        }
+    </style>
+    <style>
+        /* Style for full-screen images */
+        .fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        /* Style for scroll to top button */
+        #scrollToTopButton {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll("img");
+            const body = document.body;
+            const html = document.documentElement;
+            const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+            images.forEach(img => {
+                img.addEventListener("click", function () {
+                    img.classList.toggle("fullscreen");
+                });
+            });
+
+            window.addEventListener("scroll", function () {
+                if (body.scrollTop > 20 || html.scrollTop > 20) {
+                    scrollToTopButton.style.display = "block";
+                } else {
+                    scrollToTopButton.style.display = "none";
+                }
+            });
+
+            scrollToTopButton.addEventListener("click", function () {
+                body.scrollTop = 0;
+                html.scrollTop = 0;
+            });
+        });
+    </script>
+</head>
+
+<style>
+        /* Additional styles for better visibility */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/67700606e3b5721869a905d5d0d4ee8a.png" alt="Slider Image 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/kraftovye-pivovarni-v-rossii.jpg" alt="Slider Image 2">
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <header>
+        <h1>Добро пожаловать в торговую компанию "Легион"</h1>
+        <nav>
+            <ul>
+                <li><a href="#о_нас">О нас</a></li>
+                <li><a href="#услуги">Услуги</a></li>
+                <li><a href="#контакты">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <!-- Your existing HTML code -->
+
+    <section id="о_нас">
+        <h2 style="color: #333; background-color: #ffd700; padding: 0.5rem;">О нас</h2>
+        <p>Компания "Легион" – ваш надежный партнер в мире качественных напитков! Мы специализируемся на поставках эксклюзивных напитков в бары и рестораны Новосибирска и Кузбасса, принося в каждое заведение неповторимый вкус и атмосферу.
+
+Наш ассортимент включает в себя широкий выбор импортного пива, отборных лимонадов, свежевыжатых соков и чистейшей питьевой воды. Мы заботимся о том, чтобы каждый наш клиент мог предложить своим посетителям настоящее разнообразие вкусов и ароматов.
+
+"Легион" – это не просто компания по поставке напитков, а команда профессионалов, которая следит за последними трендами в мире напитков и всегда готова предложить своим клиентам самые актуальные и интересные позиции.
+
+Мы уверены, что качество – залог успешного бизнеса. Поэтому мы тщательно выбираем производителей и поставщиков, сотрудничая только с теми, кто соответствует высоким стандартам. Наша цель – создать для вас не просто поставщика, а настоящего партнера, с которым вы сможете долгосрочно строить успешное сотрудничество.
+
+Выбирая "Легион", вы выбираете качество, надежность и индивидуальный подход. Доверьтесь нам, и мы обеспечим ваш бизнес только лучшими напитками!</p>
+    </section>
+
+    <section id="услуги">
+        <h2 style="color: #333; background-color: #ffd700; padding: 0.5rem;">Услуги</h2>
+        <h3> <b>Наши товары включают в себя:</b>.</h3>
+        <style>
+        /* Additional styles for better text visibility */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            clear: both;
+            font-size: 1.2rem; /* Adjust the font size */
+            line-height: 1.5; /* Add some spacing between lines */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your existing HTML code -->
+
+    <ul>
+        <li>
+            <img src="images/zhiguli-barnoe-barhatnoe.png"
+                 width="300"
+                 height="450"
+                 align="left"/>
+
+
+
+            <img src="images/Stiegl_Goldbrau_draft.jpg"
+                 width="800"
+                 height="650"
+                 alt="Иллюстрация" />
+        <li>Stiegl</li>
+
+        <li>Жигули барное(бархотное)</li>
+        <li>Ballantine</li>
+        <li>ERDINGER</li>
+        <li>GUINNESS</li>
+        <li>Hoegaarden</li>
+        <li>
+            <img src="images/0F8mOx2Fjds.jpg"
+                 width="550"
+                 height="350"
+                 alt="Иллюстрация" />
+            Лимонад - Волковская пивоварня(Ягодный)
+        </li>
+        <li>Лимонад - Волковская пивоварня(Цитррус)</li>
+        <li>Неправильный мед - Волковская пивоварня</li>
+        <li>APA - Волковская пивоварня</li>
+        <li>IPA - Волковская пивоварня</li>
+    </ul>
+    </section>
+
+    <!-- The rest of your HTML code -->
+
+</body>
+
+</html>
+</head>
+<body>
+
+    <section id="контакты">
+        <h2>Контакты</h2>
+        <p>Вы можете связаться с нами по следующим контактам:</p>
+        <address>
+            <p>Адрес: ул. Примерная, 123456, Город</p>
+            <p>Email: info@legion-company.ru</p>
+            <p>Телефон: +7 (123) 456-7890</p>
+        </address>
+    </section>
+
+    <main>
+        <section class="registration">
+            <h2>Регистрация</h2>
+            <form action="/register" method="POST">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+
+        <section class="order">
+            <h2>Оставить заявку</h2>
+            <form action="/submit-order" method="POST">
+                <label for="product">Товар:</label>
+                <input type="text" id="product" name="product" required>
+
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Торговая компания "Легион"</p>
+        <body>
+            <button id="scrollToTopButton" title="Наверх">&#9650;</button>
+        </body>
+    </footer>
+</body>
+
+</html>

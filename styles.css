@@ -1,0 +1,142 @@
+/* Сброс стилей для начала */
+body, h1, h2, p, ul, li, form, button, address {
+    margin: 0;
+    padding: 0;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3333й;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стили для header */
+header {
+    background-color: #00730073;
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Стили для секций */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Стили для форм */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb7;
+}
+
+/* Стили для футера */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"] {
+        padding: 5px;
+    }
+
+    button {
+        padding: 5px 10px;
+    }
+}
+
